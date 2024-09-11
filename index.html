@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biki</title>
+</head>
+<body>
+    Biki
+    <script>
+        //Rest:
+       function addNumber(a,b,c,...others){
+      console.log(others);
+      return a+b+c+others[0];
+      
+       }
+       
+       const res=addNumber(1,2,3,4,5,6,7,8,9);
+       console.log(res);
+
+       // Spread:
+
+       let names=["biki","anish","kabir"];
+       function getnames(name1,name2,name3){
+        console.log(name1,name2,name3);
+       }
+       getnames(...names); 
+
+       //Rest in object
+
+       const info={
+        name:"Biki",
+        age:18,
+        hobby:["football","Singing"]
+       };
+       const{...other}=info;
+       console.log(other);
+
+       const nowInfo={
+        ...info,
+        age:19
+       };
+       console.log(nowInfo);
+    </script>
+</body>
+</html>
