@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Rest in array
+
+    // function diffNumber(a,b,c){
+    //     return a-b-c;
+    // }
+    // const diff= diffNumber(4.2,3,2);
+    // console.log(diff);
+
+    // function evenNumber(a){
+    //     return a%2==0;
+    // }
+    // const even=evenNumber(prompt('Enter a number'));
+    // console.log(`${even}`);
+
+    // function greaterNumber(a,b){
+    //  if(a>b)
+    //  console.log(`${a} is the greatest`);
+    // else
+    // console.log(`${b} is the greatest`);
+    // return;
+    // }
+    // const greater = greaterNumber(prompt('Enter first number'),prompt('Enter second number'));
+
+
+    // Spread in array
+     
+//     let names=[`Biki`,`Kabir`,`Asish`,`Ritesh`];
+//     names[1]="Kabiraj";
+//     function getnames(name1,name2,name3,name4){
+        
+//         console.log(...names);
+//     }
+//  getnames(...names);
+    
+
+    // Rest in Object
+
+    const info={
+        name:"biki",
+        age:18,
+        address:"siddhipur",
+        hobby:["football","guitar","books"],
+        
+    }
+    const {address}=info;
+    console.log(address);
+
+    const newinfo={
+        ...info,
+        age:19,
+        hobby:[0,"singing"]
+    }
+    console.log(newinfo);
+</script>
+</html>
